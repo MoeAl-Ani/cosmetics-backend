@@ -7,6 +7,5 @@ com.infotamia.cosmetics/.project
 com.infotamia.cosmetics/.settings/
 nohup.out
 com.infotamia.cosmetics/src/main/resources/*.yaml
-com.infotamia.cosmetics/src/test/resources/*.yaml
 config/config.yaml
 config/datasource-config.yaml

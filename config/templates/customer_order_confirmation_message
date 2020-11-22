@@ -1,0 +1,28 @@
+<h1></h1>
+<div style="text-align: center">
+    <h2>Order Confirmation</h2>
+</div>
+<div class="m_7931687634681304305container"
+     style="text-align:center;margin:0 16px;padding-left:16px;padding-right:16px;box-sizing:border-box;font-family:'proxima-soft',sans-serif">
+    <p style="font-weight:bold;display:block;border:1px solid #b2bec3;border-radius:4px;color:#636e72;background-color:#f7f8f9;padding:12px 36px;font-family:'proxima-soft',sans-serif">
+        Thank you! Your order number is: [[ORDER_NUMBER]]
+    </p>
+</div>
+<div style="text-align: center">
+    <p>Your cosmetics.fi order has been received.</p>
+</div>
+<p style="text-align:center;padding-left:16px;padding-right:16px;box-sizing:border-box;margin-top:24px;font-size:16px;font-family:'proxima-soft',sans-serif">
+    Your order will ship within 10 to 20 business days of your payment processing. Upon shipment, you will receive an
+    email with your tracking number.
+    Please be aware that order processing and shipment may be delayed due to the global COVID-19 situation.
+</p>
+<div style="margin-top:36px;text-align:center;font-family:'proxima-soft',sans-serif">
+    <a href="[[ORDER_LINK]]">
+        Order Details
+    </a>
+</div>
+
+
+<table style="border-spacing:0;border-collapse:collapse;margin:0 auto;width:100%;table-layout:inherit;font-family:'proxima-soft',sans-serif">
+    [[TABLE_BODY]]
+</table>

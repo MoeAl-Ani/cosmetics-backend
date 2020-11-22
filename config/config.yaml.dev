@@ -1,0 +1,46 @@
+!!com.infotamia.config.ConfigBean
+authenticationConfig:
+  facebook:
+    clientId: FACEBOOK_CLIENT_ID
+    clientSecret: FACEBOOK_CLIENT_SECRET
+    scope: email
+    callbackUrl: https://127.0.0.1/cosmetics/api/v1/auth/facebook/callback
+    callbackAdminUrl: https://127.0.0.1/cosmetics/api/v1/auth/admin/facebook/callback
+    profileUrl: https://graph.facebook.com/v3.3/me?fields=id,first_name,last_name,email,picture
+  google:
+    clientId: GOOGLE_CLIENT_ID
+    clientSecret: GOOGLE_CLIENT_SECRET
+    scope: email
+    callbackUrl: GOOGLE_CALLBACK_URL
+    callbackAdminUrl: GOOGLE_ADMIN_CALLBACK_URL
+    profileUrl: https://www.googleapis.com/oauth2/v3/userinfo
+jwt:
+  secret: secret
+  issuer: https://infotamia.com
+  expireAt: 1036800
+awsS3:
+  apiKey: AWS_API_KEY
+  apiSecret: AWS_API_SECRET
+  endPoint: AWS_ENDPOINT
+  bucketName: AWS_BUCKET_NAME
+payment:
+  paytrail:
+    merchantId: 13466
+    merchantSecret: 6pKF4jkv97zmqBJ3ZL8gUw5DfT2NMQ
+    successUrl: https://127.0.0.1/cosmetics/api/v1/payment/paytrail/success
+    cancelUrl: https://127.0.0.1/cosmetics/api/v1/payment/paytrail/cancel
+    notifyUrl: https://127.0.0.1/cosmetics/api/v1/payment/paytrail/notify
+    createPaymentUrl: https://payment.paytrail.com/api-payment/create
+    clientRedirectUrl: https://payment.paytrail.com/payment/load/token
+    merchantBaseUrl: https://api.paytrail.com
+    createRefundUrl: /merchant/v1/payments/[orderNumber]/refunds
+    cancelRefundUrl:
+    notifyRefundUrl: https://127.0.0.1/cosmetics/api/v1/payment/paytrail/refund/notify
+    currency: EUR
+    apiVersion: 1
+email:
+  smtpHost: smtp-relay.gmail.com
+  debug: true
+  port: 587
+  userName: USERNAME
+  password: PASSWORD

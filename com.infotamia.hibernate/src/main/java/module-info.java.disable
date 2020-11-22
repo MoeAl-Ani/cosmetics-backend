@@ -1,0 +1,9 @@
+module com.infotamia.hibernate {
+    requires java.sql;
+    requires java.persistence;
+    requires jakarta.inject;
+    requires javax.enterprise.cdi.api;
+    requires java.naming;
+    requires org.hibernate.orm.core;
+    requires reflections;
+}

@@ -1,0 +1,9 @@
+FROM openjdk:11-jre-slim-stretch
+WORKDIR /
+ENV GOOGLE_APPLICATION_CREDENTIALS ''
+COPY ["target/cosmetics.jar", "cosmetics.jar"]
+COPY ["target/classes", "classes"]
+COPY ["target/dependency", "dependency"]
+EXPOSE 8080
+EXPOSE 5005
+CMD sleep 5 && java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -cp classes:dependency/*:/etc/backend/cosmetics-config/ com.infotamia.cosmetics.application.CosmeticApplication

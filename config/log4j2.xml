@@ -1,0 +1,18 @@
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="DefaultConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="io.netty" level="warn"/>
+        <Logger name="org.eclipse" level="info"/>
+        <Logger name="io.grpc" level="info"/>
+        <Logger name="org.hibernate" level="warn"/>
+        <Logger name="org.geolatte" level="warn"/>
+        <Logger name="org.redisson" level="warn"/>
+        <Root level="debug">
+            <AppenderRef ref="DefaultConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>
